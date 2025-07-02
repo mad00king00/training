@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title> example</title>
+</head>
+<body>
+    <form>
+        <div>
+           <h1>Example Form</h1>
+        </div>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="salutation">Salutation</label>
+            <input list="salutation-list" name="salutation" id="salutation" placeholder="Select or enter salutation">
+            <datalist id="salutation-list">
+                <option value="Mr">
+                <option value="Mrs">
+                <option value="Ms">
+                <option value="Dr">
+                <option value="Prof"></option>
+            </datalist><br>
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Enter your name" required><br>
+            <label for="age">Age</label>
+            <input type="number" name="Age" id="age" placeholder="Enter your age" required><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <input type="radio" name="gender" id="Female" value="Female"><br>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" placeholder="Enter your email" required><br>
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" placeholder="Enter your password" required><br><br>
+            <label>Select your favourite fruits</label><br>
+            <label for="Apple">Apple</label>
+            <input type="checkbox" name="Apple" id="Apple" value="apple"><br>
+            <label for="Banana">Banana</label>
+            <input type="checkbox" name="Banana" id="Banana" value="banana"><br>
+            <label for="Orange">Orange</label>
+            <input type="checkbox" name="Orange" id="Orange" value="orange"><br>
+            <label for="Grapes">Grapes</label>
+            <input type="checkbox" name="Grapes" id="Grapes" value="grapes"><br>
+            <label for="Mango">Mango</label>
+            <input type="checkbox" name="Mango" id="Mango" value="mango"><br><br>
+            <label for="description">Description</label><br>
+            <input type="textarea" id="description" name="description" rows="10" cols="50" placeholder="Enter a brief description"></input><br>
+            <label for="formDate">Form Date</label>
+            <input type="date" id="formDate" name="formDate" required><br>
+            <label for="Uploadfile">Upload files</label>
+            <input type="file" name="Upload File" id="Uploadfile" accept=".jpg, .jpeg, .png, .pdf"><br>
+            
+            <input type="button" value="Submit"><br>
+
+<iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/a3ICNMQW7Ok" 
+  title="YouTube video player" 
+  allow="autoplay; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+            <br>
+        </fieldset>
+    </form>
+</body>
