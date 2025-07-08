@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Sample Form with js</title>
+    <link rel="stylesheet" href="./samplejs.css" />
+    <script src="./samplejs.js"></script>
+</head>
+
+<body>
+    <div class="content"></div>
+        <h1>Sample Form example with JavaScript</h1>
+        <form id="employeeForm">
+
+        <label for="salutation">Salutation:</label>
+        <select id="salutation" name="salutation" required>
+            <option value="">Select</option>
+            <option value="Mr">Mr.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Dr">Dr.</option>
+            <option value="Prof">Prof.</option>
+        </select>
+        <br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" pattern="[A-Za-z0-9 ]+" title="Only alphanumeric characters allowed">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required placeholder="Enter your age" pattern="\d{1,2}" title="Enter a valid age (1-99)">
+        <br><br>
+<div class="inline-group" id="gender">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br><br>
+        </div>
+        <div class ="inline-group" id="hobbies">
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="hobbies" value="Music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="hobbies" value="Travel">
+        <label for="travel">Travel</label>
+        <input type="checkbox" id="cooking" name="hobbies" value="Cooking">
+        <label for="cooking">Cooking</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label>
+        <br><br>
+        </div>
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="">Select</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        <br><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required placeholder="Enter your pincode" pattern="\d{6}" title="Enter a valid 6-digit pincode">
+        <br><br>
+
+        <label for="about">Tell me about yourself:</label>
+        <br>
+        <textarea id="about" name="about" rows="5" cols="50"  placeholder="Tell me about yourself"></textarea>
+        <br><br>
+
+        <button type="submit" id="addEmployee" class="addEmployee">Add Employee</button>
+    </form>
+
+    <div class="content"></div>
+</div>
+
+<h2>Employee Details</h2>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Salutation</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Hobbies</th>
+          <th>State</th>
+          <th>Pincode</th>
+          <th>About</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+</div>
+
+</body> 

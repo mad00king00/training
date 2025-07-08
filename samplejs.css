@@ -1,0 +1,112 @@
+*{
+     font-family: Arial, sans-serif;
+}
+
+body {
+ 
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+.content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inline-group {
+  margin-bottom: 15px;
+}
+
+.inline-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  display: block; 
+  font-weight: bold;
+  font-size: large;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#employeeTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#employeeTable th,
+#employeeTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#employeeTable th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#employeeTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#employeeTable tr:hover {
+  background-color: #f1f1f1;
+}
+/* input:invalid, textarea:invalid, select:invalid {
+  border: 2px solid #ff5555;
+  background-color: #fff0f0;
+}
+
+input:valid, textarea:valid, select:valid {
+  border: 2px solid #4CAF50;
+}
+  */
+
+
+
+
