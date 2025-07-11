@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+  <title>Product List with Filters</title>
+  <h1>Product Catalog</h1>
+  <link rel="stylesheet" href="productlist.css">
+  <script src="productlist.js"></script>
+  <body>
+  
+    <div class="buttons">
+    <button onclick="showCategory('phones')">Phones</button>
+    <button onclick="showCategory('laptops')">Laptops</button>
+    <button onclick="showCategory('tvs')">TVs</button>
+  </div>
+
+    <div id="phones" class="category" style="display:none;">
+    <h2>Smartphones</h2>
+
+    <div class="filters">
+      <h3>Filter Smartphones</h3>
+
+      <label>Manufactured Year:</label>
+      <input type="number" id="phoneYear">
+      <label>Brand:</label>
+      <input type="text" id="phoneBrand">
+      <label>Max Price:</label>
+      <input type="number" id="phonePrice">
+      <button onclick="applyFilters('smartphonesTable','phone')">Apply Filters</button>
+      <button onclick="resetFilters('smartphonesTable')">Reset</button>
+    </div>
+
+    <table id="smartphonesTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Manufactured Year</th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Processor</th>
+      <th>RAM/ROM</th>
+      <th>Screen</th>
+      <th>Battery</th>
+      <th>Buy Now</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <thead>
+  <tr>
+    <th>Name</th>
+    <th>Manufactured Year</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Operating System</th>
+    <th>Processor</th>
+    <th>RAM/Storage</th>
+    <th>Screen Size</th>
+    <th>Buy Now</th>
+  </tr>
+</thead>
+
+    <tr>
+      <td>Edge 60 fusion 5G</td>
+      <td>2025</td>
+      <td>Motorola</td>
+      <td>22999</td>
+      <td>Mediatek Dimensity 7400</td>
+      <td>8GB/256GB</td>
+      <td>6.67" Curved AMOLED</td>
+      <td>5500mAh</td>
+      <td><a href="https://www.flipkart.com/motorola-edge-60-fusion-5g-pantone-amazonite-256-gb/p/itm9218b12ff853f" target="_blank">Buy Now</a></td>
+    </tr>
+    <tr>
+      <td>iPhone 16 Pro</td>
+      <td>2025</td>
+      <td>Apple</td>
+      <td>107900</td>
+      <td>A18 Pro Chip</td>
+      <td>8GB/128GB</td>
+      <td>6.3" OLED</td>
+      <td>3582mAh</td>
+      <td><a href="https://www.flipkart.com/apple-iphone-16-pro-black-titanium-256-gb/p/itm9ce88307f4033" target="_blank">Buy Now</a></td>
+    </tr>
+    <tr>
+      <td>Poco F7 5G</td>
+      <td>2025</td>
+      <td>Poco</td>
+      <td>31999</td>
+      <td>Snapdragon 8s gen 4</td>
+      <td>12GB/256GB</td>
+      <td>6.83" OLED</td>
+      <td>7500mAh</td>
+      <td><a href="https://www.flipkart.com/poco-f7-5g/p/itm632bdcafce49a" target="_blank">Buy Now</a></td>
+    </tr>
+    <tr>
+      <td>Vivo T4x 5G</td>
+      <td>2024</td>
+      <td>Vivo</td>
+      <td>14999</td>
+      <td>Dimensity 7300</td>
+      <td>8GB/128GB</td>
+      <td>6.72 FHD</td>
+      <td>6500mAh</td>
+      <td><a href="https://www.flipkart.com/vivo-t4x-5g-marine-blue-128-gb/p/itm017656bdd097b" target="_blank">Buy Now</a></td>
+    </tr>
+    <tr>
+      <td>Realme P3x 5G</td>
+      <td>2024</td>
+      <td>Realme</td>
+      <td>12999</td>
+      <td>Dimensity 6400</td>
+      <td>6GB/128GB</td>
+      <td>6.72 FHD</td>
+      <td>6000mAh</td>
+      <td><a href="https://www.flipkart.com/realme-p3-5g-space-silver-128-gb/p/itm69060f73d27e8" target="_blank">Buy Now</a></td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+  <div id="laptops" class="category" style="display:none;">
+    <h2>Laptops</h2>
+    <div class="filters">
+      <h3>Filter Laptops</h3>
+      <label>Manufactured Year:</label>
+      <input type="number" id="laptopYear">
+      <label>Brand:</label>
+      <input type="text" id="laptopBrand">
+      <label>Max Price:</label>
+      <input type="number" id="laptopPrice">
+      <button onclick="applyFilters('laptopsTable','laptop')">Apply Filters</button>
+      <button onclick="resetFilters('laptopsTable')">Reset</button>
+    </div>
+    <table id="laptopsTable">
+      <thead>
+  <tr>
+    <th>Name</th>
+    <th>Manufactured Year</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Operating System</th>
+    <th>Processor</th>
+    <th>RAM/Storage</th>
+    <th>Screen Size</th>
+    <th>Buy Now</th>
+  </tr>
+</thead>
+
+        <tr>
+  <td>MacBook Air M2</td>
+  <td>2022</td>
+  <td>Apple</td>
+  <td>70990</td>
+  <td>macOS</td>
+  <td>Apple M2</td>
+  <td>8GB/256GB</td>
+  <td>13.6"</td>
+  <td><a href="https://www.flipkart.com/apple-macbook-air-m2-8-gb-256-gb-ssd-mac-os-monterey-mly33hn-a/p/itmdc5308fa78421" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>Asus TUF A15</td>
+  <td>2023</td>
+  <td>ASUS</td>
+  <td>56999</td>
+  <td>Windows 11</td>
+  <td>AMD Reyzen 7435HS</td>
+  <td>16GB/512GB/4GB RTX 2050</td>
+  <td>15.6"</td>
+  <td><a href="https://www.flipkart.com/asus-tuf-gaming-a15-amd-ryzen-7-octa-core-7435hs-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-fa566nfr-hn259w-laptop/p/itm10514ecd2a794?pid=COMHFT2NEWGYDWAV&lid=LSTCOMHFT2NEWGYDWAVPS8GCS&marketplace=FLIPKART&q=ausu+tuf+a15&store=6bo%2Fb5g&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=abd72611-4f65-4c2e-96fa-5c9175f304cf.COMHFT2NEWGYDWAV.SEARCH&ppt=pp&ppn=pp&ssid=ftfu2xt6xc0000001752056716656&qH=ab36d55a6ef584d4" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>HP 240 G8</td>
+  <td>2022</td>
+  <td>HP</td>
+  <td>30990</td>
+  <td>Windows 11</td>
+  <td>Intel i3-1115G4</td>
+  <td>8GB/1TB HDD</td>
+  <td>14"</td>
+  <td><a href="https://www.flipkart.com/hp-core-i3-11th-gen-8-gb-512-gb-ssd-dos-240-g8-notebook/p/itm99455accebf4c" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>Lenovo LOQ </td>
+  <td>2025</td>
+  <td>Lenovo</td>
+  <td>61690</td>
+  <td>Windows 11</td>
+  <td>Intel i5-12450HX</td>
+  <td>12GB/512GB/4GB RTX2050</td>
+  <td>15.6"</td>
+  <td><a href="https://www.flipkart.com/lenovo-loq-core-i5-12th-gen-12450hx-12-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-83lk0032in-gaming-laptop/p/itmb98c915de0a7b" target="_blank">Buy Now</a></td>
+</tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div id="tvs" class="category" style="display:none;">
+    <h2>Televisions</h2>
+    <div class="filters">
+      <h3>Filter TVs</h3>
+      <label>Manufactured Year:</label>
+      <input type="number" id="tvYear">
+      <label>Brand:</label>
+      <input type="text" id="tvBrand">
+      <label>Max Price:</label>
+      <input type="number" id="tvPrice">
+      <button onclick="applyFilters('televisionsTable','tv')">Apply Filters</button>
+      <button onclick="resetFilters('televisionsTable')">Reset</button>
+    </div>
+    <table id="televisionsTable">
+      <thead>
+  <tr>
+    <th>Name</th>
+    <th>Manufactured Year</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>RAM/Storage</th>
+    <th>Screen Size</th>
+    <th>Resolution</th>
+    <th>Buy Now</th>
+  </tr>
+</thead>
+
+        <tr>
+  <td>Samsung Tizen Tv FHD</td>
+  <td>2025</td>
+  <td>Samsung</td>
+  <td>26490</td>
+  <td>2GB/8GB</td>
+  <td>43" FHD</td>
+  <td>1930x1080</td>
+  <td><a href="https://www.flipkart.com/samsung-108-cm-43-inch-full-hd-led-smart-tizen-tv-hdr-purcolor-dolby-digital-plus-hyper-real-picture-engine-triple-protection-smartthings-app-support-key-connect-share-hdd-connectshare-usb-2-0/p/itme5ad32e73c573" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>LG LR570 HD Ready</td>
+  <td>2023</td>
+  <td>LG</td>
+  <td>14490</td>
+  <td>1GB/8GB</td>
+  <td>32"</td>
+  <td>1366x768</td>
+  <td><a href="https://www.flipkart.com/lg-lr570-80-cm-32-inch-hd-ready-led-smart-webos-tv-2025-alpha5-gen-6-ai-processor-100-free-channels-brightness-control-sound-virtual-surround-5-1-up-mix-fta-satellite-port-magic-remote-compatible-60hz-refresh-rate-alexa-built-works-hey-google/p/itm9c22d06d514d0" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>Sony Bravia 2 4K</td>
+  <td>2024</td>
+  <td>Sony</td>
+  <td>38490</td>
+  <td>2GB/16GB</td>
+  <td>43" 4K UHD</td>
+  <td>3840x2160</td>
+  <td><a href="https://www.flipkart.com/sony-bravia-2-108-cm-43-inch-ultra-hd-4k-led-smart-google-tv/p/itm02f057ffc49f6?pid=TVSHYP2EXEG8Q6TP&lid=LSTTVSHYP2EXEG8Q6TPKDFZXY&marketplace=FLIPKART&q=sony+bravia+2+4k&store=ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=2c37eb71-935e-4797-92eb-40d9c57830be.TVSHYP2EXEG8Q6TP.SEARCH&ppt=pp&ppn=pp&ssid=c7cgmhn9kw0000001752056484385&qH=9b2d5ff71ca8461f" target="_blank">Buy Now</a></td>
+</tr>
+<tr>
+  <td>TCL P7K 139 4k QLED</td>
+  <td>2024</td>
+  <td>TCL</td>
+  <td>43990</td>
+  <td>2GB/16GB</td>
+  <td>55" 4k QLED</td>
+  <td>3840x2160</td>
+  <td><a href="https://www.flipkart.com/tcl-p7k-139-cm-55-inch-qled-ultra-hd-4k-smart-google-tv-2025-dolby-vision-atmos-35w-onkyo-2-1ch-subwoofer-game-master/p/itmff03ef8145bd7?pid=TVSHAVHGXJ4RHFMF&lid=LSTTVSHAVHGXJ4RHFMFF1TKHT&marketplace=FLIPKART&q=tcl+pk7&store=ckf%2Fczl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=8855c3fb-f729-4261-abb8-927e6df1f13b.TVSHAVHGXJ4RHFMF.SEARCH&ppt=sp&ppn=sp&ssid=qmrg6xspjk0000001752056532256&qH=0f77c1042428595b" target="_blank">Buy Now</a></td>
+</tr>
+
+      </tbody>
+    </table>
+  </div>
